@@ -3,26 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Caroline Gatwiri | Portfolio</title>
+  <title>Caroline Gatwiri | Software Engineer</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Hi! I'm Caroline Gatwiri</h1>
-    <p>A passionate Junior Software Engineer based in Nairobi, Kenya.</p>
-  </header>
+  <div class="container">
+    <!-- Header & Navigation -->
+    <header class="header">
+      <div class="nav-container">
+        <a href="#" class="logo">Caroline Gatwiri</a>
+        <nav class="nav">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      With a background in Computer Science and practical experience in mobile app development, I enjoy creating digital solutions that are both functional and user-friendly.
-    </p>
-    <p>
-      Over the past year, I've worked with Eclectics International as an E-Cohort Member and later as a Junior Software Engineer, contributing to impactful projects like the <strong>Consolidated Bank Android App (Kotlin)</strong>, <strong>Internet Banking App (React Native)</strong>, and <strong>Ushuru Sacco Android Application (Java)</strong>. These experiences have sharpened my skills in cross-functional collaboration, problem-solving, and agile development.
-    </p>
-    <p>
-      I believe in continuous learning, teamwork, and technology that makes a difference. Whether I'm debugging code or mentoring others, I strive to make a positive impact — one line at a time.
-    </p>
-  </section>
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Hi! I'm <span class="highlight">Caroline Gatwiri</span></h1>
+          <p class="subtitle">A passionate Junior Software Engineer based in Nairobi, Kenya.</p>
+          <p class="description">
+            With a background in Computer Science and practical experience in mobile app development, 
+            I enjoy creating digital solutions that are both functional and user-friendly.
+          </p>
+          <div class="cta-buttons">
+            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+            <a href="#" class="btn btn-secondary" download>Download Resume</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="experience">
+        <h2>Experience & Projects</h2>
+        <div class="projects">
+          <div class="project-card">
+            <h3>Consolidated Bank Android App</h3>
+            <p class="tech">Kotlin</p>
+            <p>Developed key features for the Android banking application, focusing on secure transactions and smooth user experience.</p>
+          </div>
+
+          <div class="project-card">
+            <h3>Internet Banking App</h3>
+            <p class="tech">React Native</p>
+            <p>Built a cross-platform internet banking solution with responsive UI and secure authentication flow.</p>
+          </div>
+
+          <div class="project-card">
+            <h3>Ushuru Sacco Android Application</h3>
+            <p class="tech">Java</p>
+            <p>Contributed to core modules of a financial management app for SACCO members, improving accessibility and performance.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+          Over the past year, I've worked with <strong>Eclectics International</strong> as an E-Cohort Member and later as a Junior Software Engineer. 
+          These experiences have sharpened my skills in cross-functional collaboration, problem-solving, and agile development.
+        </p>
+        <p>
+          I believe in continuous learning, teamwork, and technology that makes a difference. 
+          Whether I'm debugging code or mentoring others, I strive to make a positive impact — one line at a time.
+        </p>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <h2>Let's Connect</h2>
+        <p>I'm always open to discussing new opportunities, collaborations, or tech conversations.</p>
+        <a href="mailto:carolinegatwirii@gmail.com" class="btn btn-outline">Say Hello</a>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Caroline Gatwiri. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
